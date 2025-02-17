@@ -24,4 +24,4 @@ jobs:
           with:
             context: .
             push: true
-            tags: ${{ secrets.DOCKER_USERNAME }}/your_image_name:latest
+            tags: ${{ secrets.DOCKER_USERNAME }}/image_final-python:latest
