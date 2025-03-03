@@ -1,4 +1,5 @@
 #!/bin/bash
-
-sudo docker pull lorketz/image_final-python:latest
-sudo docker run -d -p 5000:5000 lorketz/image_final-python:latest --name python_server
+docker pull lorketz/image_final-python:latest
+docker stop python_server || true
+docker rm python_server || true
+docker run -d -p 5000:5000 --name python_server lorketz/image_final-python:latest
